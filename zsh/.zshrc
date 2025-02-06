@@ -69,7 +69,10 @@ alias gco="git checkout"
 alias cl="clear"
 alias l="ls -lah"
 alias ghostty="/Applications/Ghostty.app/Contents/MacOS/ghostty"
+alias b="bun"
 
 # To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
 [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
 eval "$(/opt/homebrew/bin/mise activate zsh)"
+
+export PATH=$PATH:/Users/hackr/.spicetify
