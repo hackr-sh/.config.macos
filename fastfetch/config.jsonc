@@ -1,107 +1,93 @@
 {
     "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
     "logo": {
-        "type": "auto",
-        "source": "macos2",
+        "type": "kitty",
+		"source": "~/.config/fastfetch/infernape.png",
+		"width": 32,
+		"height": 16,
         "padding": {
-            "top": 0,
-            "right": 5
+            "top": 2,
+			"left": 2
         }
     },
     "display": {
-        "separator": "   ",
-        "color": {
-            "separator": "white"
-        },
-        "constants": [
-            "───────────────────────────────────────────────────────────────────────────",
-            "│\u001b[75C│\u001b[75D"
-        ]
+        "separator": " "
     },
     "modules": [
+		{
+			"key": "\n",
+			"type": "custom"
+		},
         {
-            "format": "{#1}{#keys}╭{$1}╮\u001b[76D {user-name-colored}{at-symbol-colored}{host-name-colored} {#32}  ",
-            "type": "title"
-        },
-        {
-            "key": "{$2}{#31} kernel   ",
-            "type": "kernel"
-        },
-        {
-            "key": "{$2}{#32}󰅐 uptime   ",
-            "type": "uptime"
-        },
-        {
-            "key": "{$2}{#33}{icon} distro   ",
-            "type": "os"
-        },
-        {
-            "key": "{$2}{#34}󰨇 desktop  ",
-            "type": "de"
-        },
-        {
-            "key": "{$2}{#35} term     ",
-            "type": "terminal"
-        },
-        {
-            "key": "{$2}{#36} shell    ",
-            "type": "shell"
-        },
-        {
-            "key": "{$2}{#38} wm       ",
-            "type": "wm"
-        },
-        {
-            "key": "{$2}{#37}󰏖 packages ",
-            "type": "packages"	
-        },
-        {
-            "key": "{$2}{#38}󰏖 font     ",
-            "type": "terminalfont"
-        },
-        {
-            "key": "{$2}{#31} editor   ",
-            "type": "editor"
-        },
-        {
-            "key": "{$2}{#32}󰍛 cpu      ",
-            "type": "cpu",
-            "showPeCoreCount": true,
-            "temp": true
-        },
-        {
-            "key": "{$2}{#33}󰍛 gpu      ",
-            "type": "gpu"
-        },
-        {
-            "key": "{$2}{#34}󰍹 display  ",
-            "type": "display"
-        },
-        {
-            "key": "{$2}{#35}󰉉 disk     ",
-            "type": "disk",
-            "folders": "/"
-        },
-        {
-            "key": "{$2}{#36} memory   ",
-            "type": "memory"
-        },
-        //{
-        //    "key": "{$2}{#37}󰩟 network  ",
-        //    "type": "localip",
-        //    "format": "{ipv4} ({ifname})"
-        //},
-        {
-            "format": "{#1}{#keys}├{$1}┤",
+            "key": "{#39}╭───────────╮",
             "type": "custom"
         },
         {
-            "key": "{$2}{#39} colors   ",
+            "key": "{#39}│ {#31} user    {#39}│",
+            "type": "title",
+            "format": "{1}"
+        },
+        {
+            "key": "{#39}│ {#32}󰇅 host    {#39}│",
+            "type": "title",
+            "format": "{2}"
+        },
+        {
+            "key": "{#39}│ {#34}󰟾 distro  {#39}│",
+            "type": "os",
+			"format": "{3}"
+        },
+        {
+            "key": "{#39}│ {#35} kernel  {#39}│",
+            "type": "kernel",
+			"format": "{1} {2}"
+        },
+        {
+            "key": "{#39}│ {#33}󰅐 uptime  {#39}│",
+            "type": "uptime",
+			"format": "{2} Hrs {3} Mins"
+        },
+        {
+            "key": "{#39}│ {#36}󰇄 desktop {#39}│",
+            "type": "de"
+        },
+        {
+            "key": "{#39}│ {#31} term    {#39}│",
+            "type": "terminal",
+			"format": "{5}"
+        },
+        {
+            "key": "{#39}│ {#32} shell   {#39}│",
+            "type": "shell",
+			"format": "{6}"
+        },
+        {
+            "key": "{#39}│ {#34}󰉉 disk    {#39}│",
+            "type": "disk",
+            "folders": "/",
+			"format": "{1} / {2} ({3})"
+        },
+        {
+            "key": "{#39}│ {#35} memory  {#39}│",
+            "type": "memory",
+			"format": "{1} / {2} ({3})"
+        },
+        {
+            "key": "{#39}│ {#36}󰩟 network {#39}│",
+            "type": "localip",
+            "format": "{1}"
+        },
+        {
+            "key": "{#39}├───────────┤",
+            "type": "custom"
+        },
+        {
+            "key": "{#39}│ {#39} colors  {#39}│ 󰮯 ",
             "type": "colors",
             "symbol": "circle"
         },
         {
-            "format": "{#1}{#keys}╰{$1}╯",
+            "key": "{#39}╰───────────╯",
             "type": "custom"
         }
     ]
