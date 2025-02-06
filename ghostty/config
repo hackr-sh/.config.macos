@@ -7,7 +7,8 @@ font-synthetic-style = bold,italic,bold-italic
 font-size = 14
 font-thicken = true
 grapheme-width-method = unicode
-theme = "hackr-cyberpunk-vibes"
+theme = light:rose-pine-dawn,dark:rose-pine-moon
+initial-command = "login -fpql $(whoami) $SHELL"
 cursor-style = bar
 mouse-hide-while-typing = true
 
@@ -219,15 +220,18 @@ shell-integration = detect
 shell-integration-features = cursor,no-sudo,title
 osc-color-report-format = 16-bit
 vt-kam-allowed = false
-custom-shader = "shaders/tft.glsl"
-custom-shader = "shaders/bloom.glsl"
-custom-shader-animation = false
+# custom-shader = "shaders/glow-rgbsplit-twitchy.glsl"
+# custom-shader = "shaders/water.glsl"
+# custom-shader = "shaders/glow-rgbsplit-twitchy.glsl"
+# custom-shader = "shaders/smoke-and-ghost.glsl"
+# custom-shader = "shaders/test.glsl"
+custom-shader-animation = true
 macos-non-native-fullscreen = false
 macos-titlebar-style = tabs
 macos-option-as-alt = false
 macos-window-shadow = true
 desktop-notifications = true
-bold-is-bright = false
+bold-is-bright = true
 
 # This will be used to set the `TERM` environment variable.
 # HACK: We set this with an `xterm` prefix because vim uses that to enable key
@@ -236,3 +240,8 @@ bold-is-bright = false
 # keyprotocol=ghostty:kitty`, however a bug in the implementation prevents it
 # from working properly. https://github.com/vim/vim/pull/13211 fixes this.
 term = xterm-ghostty
+macos-icon = custom-style
+macos-icon-frame = plastic
+macos-icon-ghost-color = e0def4
+macos-icon-screen-color = 232136
+shell-integration = fish

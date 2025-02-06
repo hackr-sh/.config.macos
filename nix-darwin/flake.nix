@@ -20,11 +20,7 @@
         [
           # terminals, terminal apps, and utilities
           pkgs.vim
-          pkgs.kitty
-          pkgs.kitty-themes
           pkgs.starship
-          pkgs.alacritty
-          pkgs.alacritty-theme
           pkgs.lazygit
           pkgs.atuin
           pkgs.screenfetch
@@ -32,22 +28,20 @@
           pkgs.zoxide
           pkgs.fzf
           pkgs.neovim
-          pkgs.fastfetch
           pkgs.btop
           pkgs.zsh-autoenv
           pkgs.gh
           pkgs.yazi
 
           # apps
-          pkgs.raycast
-          pkgs.spotify
+          # pkgs.raycast
           pkgs.mos
           pkgs.discord
           pkgs.slack
-          pkgs.teams
           pkgs.obsidian
           pkgs.stats
           pkgs.fontforge
+          pkgs.alt-tab-macos
 
           # dev dependencies
           pkgs.dotnet-sdk_8
@@ -115,6 +109,10 @@
         brews = [
           "azure-cli" # we install az via brew since az ssh is broken on pkgs.azure-cli
           "mise"
+          "cocoapods"
+          "fastfetch"
+          "nsis"
+          "llvm"
         ];
 
         masApps = {
@@ -143,6 +141,12 @@
           "rider"
           "visual-studio-code"
           "zed"
+          "ghostty"
+          "zen-browser"
+          {
+            name = "raycast";
+            greedy = true;
+          }
         ];
       };
 
