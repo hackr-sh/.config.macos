@@ -12,6 +12,7 @@
     configuration = { pkgs, ... }: {
       environment.variables = {
         ZDOTDIR = "$HOME/.config/zsh";
+        XDG_CONFIG_HOME = "$HOME/.config";
       };
 
       # List packages installed in system profile. To search by name, run:
@@ -113,6 +114,7 @@
           "fastfetch"
           "nsis"
           "llvm"
+          "nushell"
         ];
 
         masApps = {
