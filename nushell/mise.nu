@@ -54,3 +54,4 @@ def --env mise_hook [] {
     | update-env
 }
 
+alias m = mise
