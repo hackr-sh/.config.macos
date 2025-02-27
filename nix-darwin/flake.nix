@@ -37,7 +37,6 @@
           # apps
           # pkgs.raycast
           pkgs.mos
-          pkgs.discord
           pkgs.slack
           pkgs.obsidian
           pkgs.stats
@@ -150,6 +149,7 @@
             greedy = true;
           }
           "loop"
+          "discord"
         ];
       };
 
