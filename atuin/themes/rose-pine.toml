@@ -1,0 +1,12 @@
+[theme]
+name = "rose-pine"
+
+[colors]
+AlertInfo = "#c4a7e7"
+AlertWarn = "#f6c177"
+AlertError = "#eb6f92"
+Annotation = "#31748f"
+Base = "#e0def4"
+Guidance = "#6e6a86"
+Important = "#31748f"
+Title = "#e0def4"
