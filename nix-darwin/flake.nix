@@ -28,6 +28,8 @@
           pkgs.neofetch
           pkgs.zoxide
           pkgs.fzf
+          pkgs.ripgrep
+          pkgs.bat
           pkgs.neovim
           pkgs.btop
           pkgs.zsh-autoenv
@@ -57,7 +59,7 @@
       nixpkgs.config = { allowBroken = true; allowUnfree = true; };
 
       # Auto upgrade nix package and the daemon service.
-      services.nix-daemon.enable = true;
+      nix.enable = true;
       # nix.package = pkgs.nix;
 
       # Necessary for using flakes on this system.
@@ -86,11 +88,10 @@
       nixpkgs.hostPlatform = "aarch64-darwin";
 
       fonts.packages = with pkgs; [
-        (nerdfonts.override { fonts = [ 
-          "FiraCode" 
-          "DroidSansMono" 
-          "0xProto" 
-        ];}) 
+        nerd-fonts.fira-code
+        nerd-fonts.droid-sans-mono
+        nerd-fonts._0xproto
+        nerd-fonts.departure-mono
         (google-fonts.override { fonts = [ 
           "DM Sans" 
           "DM Mono" 
@@ -102,7 +103,7 @@
       ];
 
       # Enable TouchId to authenticate sudo
-      security.pam.enableSudoTouchIdAuth = true;
+      security.pam.services.sudo_local.touchIdAuth = true;
 
       homebrew = {
         enable = true;
