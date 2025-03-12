@@ -109,10 +109,10 @@ ctrl-alt-right = 'focus right'
 # ctrl-cmd-scrdown = 'focus down'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-window
-ctrl-alt-cmd-left = 'move left'
-ctrl-alt-cmd-down = 'move down'
-ctrl-alt-cmd-up = 'move up'
-ctrl-alt-cmd-right = 'move right'
+ctrl-alt-shift-left = 'move left'
+ctrl-alt-shift-down = 'move down'
+ctrl-alt-shift-up = 'move up'
+ctrl-alt-shift-right = 'move right'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#resize
 ctrl-alt-cmd-minus = 'resize smart -50'
@@ -125,10 +125,10 @@ ctrl-alt-cmd-i = 'move-node-to-workspace I'
 ctrl-alt-cmd-k = 'move-node-to-workspace K'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace
-ctrl-alt-shift-left = 'focus-monitor left'
-ctrl-alt-shift-down = 'focus-monitor down'
-ctrl-alt-shift-up = 'focus-monitor up'
-ctrl-alt-shift-right = 'focus-monitor right'
+# ctrl-alt-shift-left = 'focus-monitor left'
+# ctrl-alt-shift-down = 'focus-monitor down'
+# ctrl-alt-shift-up = 'focus-monitor up'
+# ctrl-alt-shift-right = 'focus-monitor right'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
 ctrl-alt-tab = 'workspace-back-and-forth'
