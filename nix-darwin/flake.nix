@@ -39,7 +39,7 @@
           # apps
           # pkgs.raycast
           pkgs.mos
-          pkgs.slack
+          # pkgs.slack
           pkgs.obsidian
           pkgs.stats
           pkgs.fontforge
@@ -124,6 +124,7 @@
         };
 
         casks = [
+          "slack"
           "proton-pass"
           "proton-mail"
           "protonvpn"
