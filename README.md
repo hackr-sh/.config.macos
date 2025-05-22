@@ -1,6 +1,9 @@
-# hackr's nix-darwin dotfiles
+# ⚠️ This project is now archived ⚠️
+> Further maintenance of hackr's darwin configs can be found at https://github.com/hackr-sh/hackr-nixos
 
-## Installation
+## hackr's nix-darwin dotfiles
+
+### Installation
 
 1. Install nix [here](https://nixos.org/download.html)
 2. Install nix-darwin (via the flakes section) [here](https://github.com/LnL7/nix-darwin?tab=readme-ov-file#flakes)
